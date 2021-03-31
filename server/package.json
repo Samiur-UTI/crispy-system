@@ -13,6 +13,7 @@
   "author": "piedevs",
   "license": "MIT",
   "dependencies": {
+    "@sendgrid/mail": "^7.4.2",
     "bcrypt": "^5.0.1",
     "colors": "^1.4.0",
     "cookie-parser": "^1.4.5",
