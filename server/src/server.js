@@ -15,9 +15,9 @@ colors.setTheme({
   info: 'bgGreen',
   help: 'cyan',
   warn: 'yellow',
-  success: 'bgBlue',
+  success: 'green',
   error: 'red',
-  data: 'green',
+  data: 'blue',
 })
 
 // app setup
