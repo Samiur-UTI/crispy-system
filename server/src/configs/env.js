@@ -6,5 +6,6 @@ export const config = {
     FORGET_PASSWORD_TEMPLATE_ID: process.env.FORGET_PASSWORD_TEMPLATE_ID,
     SG_FROM_EMAIL: process.env.SG_FROM_EMAIL,
   },
-  JWT_SECRET: process.env.JWT_SECRET
+  JWT_SECRET: process.env.JWT_SECRET,
+  CLIENT_DEV_URL: 'http://localhost:3000/',
 }
