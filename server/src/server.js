@@ -13,7 +13,7 @@ import colors from 'colors'
 
 colors.setTheme({
   info: 'bgGreen',
-  help: 'cyan',
+  confirm: 'cyan',
   warn: 'yellow',
   success: 'green',
   error: 'red',
