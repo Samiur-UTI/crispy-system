@@ -8,8 +8,8 @@ const msgConfig = {
   emailVerification: {
     templateId: config.SG_Config.EMAIL_VERIFICATION_TEMPLATE_ID,
   },
-  forgetPassword: {
-    templateId: config.SG_Config.FORGET_PASSWORD_TEMPLATE_ID,
+  passwordReset: {
+    templateId: config.SG_Config.PASSWORD_RESET_TEMPLATE_ID,
   },
 }
 

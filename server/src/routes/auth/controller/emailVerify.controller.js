@@ -8,7 +8,7 @@ import { config } from '../../../configs/env'
  * @param {*} res
  */
 
-export const verify = async (req, res) => {
+export const emailVerify = async (req, res) => {
   try {
     const { uid } = verifyToken(req.params.token)
     const user = await admin.auth().getUser(uid)
