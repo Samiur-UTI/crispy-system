@@ -1,6 +1,7 @@
 import { config } from '../configs/env'
 import sgMail from '@sendgrid/mail'
 
+
 sgMail.setApiKey(config.SG_Config.SG_API_KEY)
 
 const msgConfig = {
@@ -8,12 +9,12 @@ const msgConfig = {
     templateId: config.SG_Config.EMAIL_VERIFICATION_TEMPLATE_ID,
   },
   forgetPassword: {
-    templateId: config.SG_Config.FORGET_PASSWORD_TEMPLATE_ID
+    templateId: config.SG_Config.FORGET_PASSWORD_TEMPLATE_ID,
   },
 }
 
 /**
- *
+ * @desc send transactional Email
  * @param {String} type  [emailVerification, forgetPassword]
  * @param {String} link Link to follow
  * @param {Object} emailProps  { to: 'user email', dynamic_template_data: {name: '', verificationLink: '', forgetPasswordLink: ''} }
@@ -33,4 +34,3 @@ export const sendEmail = async (type, emailProps) => {
     console.log(error)
   }
 }
-
