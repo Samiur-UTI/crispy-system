@@ -30,7 +30,7 @@ CREATE TABLE comments(
     FOREIGN KEY (user_id) REFERENCES userModel(user_id) ON DELETE CASCADE,
     FOREIGN KEY (video_id) REFERENCES videos(video_id) ON DELETE CASCADE
 );
--- ALTER TABLE courses
--- ADD FOREIGN KEY (instructor_id) REFERENCES userModel(user_id)
+ALTER TABLE courses
+ADD FOREIGN KEY (instructor_id) REFERENCES userModel(user_id)
 
 
